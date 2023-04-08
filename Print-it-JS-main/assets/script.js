@@ -16,6 +16,12 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
-let arrow = document.querySelector('#arrow');
-arrow.addEventListener('click')
-console.log(arrow);
+let arrow_right = document.getElementsByClassName('arrow_right');
+let arrow_left = document.getElementsByClassName('arrow_left');
+arrow_right.addEventListener('click, updateSlides_right');
+arrow_left.addEventListener('click, updateSlides_left');
+
+
+function updateSlides_left(){
+Image=slides2;
+}
