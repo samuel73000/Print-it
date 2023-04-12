@@ -1,4 +1,4 @@
-const slides = [
+slides = [
 	{
 		"image":"./assets/images/slideshow/slide1.jpg",
 		"tagLine":"Impressions tous formats <span>en boutique et en ligne</span>"
@@ -22,8 +22,8 @@ const rightArrow = document.querySelector('.arrow_right');
 const dots = document.querySelector('.dots');
 const img = document.querySelector('.banner-img');
 let positionSlide = 0;
-const txt = document.querySelector('.banner-txt');
-
+const txt = document.querySelector('#banner-txt');
+// fleche
 leftArrow.addEventListener('click', function() {
 	positionSlide--;
 	if (positionSlide === -1) {
@@ -44,7 +44,9 @@ rightArrow.addEventListener('click', function() {
 	txt.innerHTML = slides[positionSlide].tagLine;
 	console.log('On clique sur la flèche de droite');
 	updateDots();
+	
 });
+// petit points
 
 for (let i = 0; i < slides.length; i++) {
 	const newDot = document.createElement('div');
